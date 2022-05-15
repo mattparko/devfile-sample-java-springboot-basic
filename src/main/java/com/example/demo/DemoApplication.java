@@ -14,6 +14,11 @@ public class DemoApplication {
     String home() {
         return "Hello World!";
     }
+    
+    @RequestMapping("/healthz")
+    String home() {
+        return "Health: OK";
+    }
 
     public static void main(String[] args) {
         SpringApplication.run(DemoApplication.class, args);
